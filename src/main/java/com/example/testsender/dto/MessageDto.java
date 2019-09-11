@@ -2,11 +2,11 @@ package com.example.testsender.dto;
 
 public class MessageDto {
     private String message;
-    private Integer code;
+    private String code;
 
     public MessageDto() {
     }
-    public MessageDto(String message, Integer code) {
+    public MessageDto(String message, String code) {
         this.message = message;
         this.code = code;
     }
@@ -19,11 +19,11 @@ public class MessageDto {
         this.message = message;
     }
 
-    public Integer getCode() {
+    public String getCode() {
         return code;
     }
 
-    public void setCode(Integer code) {
+    public void setCode(String code) {
         this.code = code;
     }
 }

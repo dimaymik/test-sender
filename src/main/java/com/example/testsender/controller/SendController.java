@@ -16,7 +16,7 @@ public class SendController {
     SenderCreator creator;
     @PostMapping("/send")
     HttpResponseDto sendMessage(@RequestBody MessageDto messageDto) {
-        Integer code = messageDto.getCode();
+        String code = messageDto.getCode();
         return new HttpResponseDto(creator.createSender(code).send(messageDto.getMessage()));
     }
 }
