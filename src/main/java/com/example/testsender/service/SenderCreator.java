@@ -7,11 +7,6 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class SenderCreator {
-    @Autowired
-    SmsSenderService smsSender;
-
-    @Autowired
-    WhatsUpSenderService whatsUpSender;
 
     @Autowired
     ApplicationContext ctx;
